@@ -1,4 +1,7 @@
 import requests
+import json
+
+conf = json.loads(file="conf.json")
 
 lv = ["search", "v=Автомобиль"]
 
@@ -20,3 +23,9 @@ try:
 
     else:
         print("failed try")
+        
+for let in ls:
+    a = let
+    if a == conf[0] or conf[1] or conf[2]:
+        conf.append(let)
+    continue
